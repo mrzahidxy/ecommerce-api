@@ -3,7 +3,7 @@ const moongose = require('mongoose');
 const orderSchema = new moongose.Schema(
     {
         userId: { type: String, required: true },
-        product: [
+        products: [
             {
                 productId: { type: String, required: true },
                 quantity: { type: Number, default: 1 }
