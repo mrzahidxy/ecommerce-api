@@ -27,7 +27,7 @@ app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);
 app.use('/api/carts', cartRouter);
 app.use('/api/orders', oderRouter)
-app.use('/checkout/payment', stripeRouter)
+app.use('/checkout', stripeRouter)
 
 app.listen(process.env.PORT || 5000, () => {
     console.log('Backend is running');
