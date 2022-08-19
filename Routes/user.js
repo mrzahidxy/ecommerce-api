@@ -73,7 +73,7 @@ router.get('/stats', verifyTokenAndAdmin, async (req, res) => {
             },
             {
                 $group: {
-                    _id: "month",
+                    _id: "$month",
                     total: { $sum: 1 },
                 },
             },
