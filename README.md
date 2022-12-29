@@ -1,38 +1,28 @@
-<h1> All api's link </h1>
+<h3> All api's link </h3>
 
 
-Base_url = https://ecommerce-mern-api.vercel.app
+Base URL = https://ecommerce-mern-api.vercel.app
 
-<h3> 1. User </h3>
-a) Registration 
-Port: /api/auth/login
-Body: 
-{
-    "username": "user",
-    "email": "myuser@gmail.com",
-    "password": "123456"
-}
+<h4> PRODUCT </h4>
+All: /api/products/
+Get/Update/Delete a single Product: /api/products/:id
 
-b) Login
-Port: /api/auth/login
-Body: 
-{
-  "username": "user",
-  "password": "123456"
-}
+<h4>USER</h4>
+Login: /api/auth/login
+Signup: /api/register
+All: /api/users/
+Upadte/Delete:/api/users/:id
+Get: /api/users/find/:id
+Stats: /api/users/stats
 
-c) Update User
-Port: /api/users/:id
-Body: 
-{
-  "username": "user2"
-}
 
-d) Delete User
-Port: /api/users/:id
+<h4>ORDER</h4>
+Get/Post: /api/orders/
+Find: /api/orders/find/:id
+Update/Delete: /api/orders/:orderId
+Income: /api/orders/income
 
-c) Find User
-Port: /api/users/find/:id
 
-d) Find All User
-Port: api/users/
+
+
+
